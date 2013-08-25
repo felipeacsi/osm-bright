@@ -1,8 +1,8 @@
 {
   "bounds": [
     -70.5957,
-    -33.3886,
-    -70.569,
+    -33.3872,
+    -70.5687,
     -33.3739
   ],
   "center": [
@@ -13,7 +13,7 @@
   "format": "png",
   "interactivity": false,
   "minzoom": 0,
-  "maxzoom": 18,
+  "maxzoom": 19,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "palette.mss",
@@ -28,7 +28,7 @@
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
         "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.3.0/physical/10m-land.zip",
         "id": "land",
-        "project": "foss4g-2011",
+        "project": "OSMBright",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
         "user": "postgres"
       },
@@ -40,7 +40,10 @@
     },
     {
       "Datasource": {
-        "file": "http://tilemill-data.s3.amazonaws.com/osm/coastline-good.zip"
+        "file": "http://tilemill-data.s3.amazonaws.com/osm/coastline-good.zip",
+        "id": "processed_p",
+        "project": "OSMBright",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
       },
       "class": "",
       "geometry": "polygon",
@@ -105,7 +108,7 @@
         "geometry_field": "geometry",
         "id": "landuse",
         "key_field": "",
-        "project": "osm-bright-imposm",
+        "project": "OSMBright",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
         "table": "( SELECT geometry, type, area\n  FROM osm_landusages\n  ORDER BY area DESC\n) AS data",
         "type": "postgis",
@@ -298,7 +301,10 @@
         "key_field": "",
         "table": "( SELECT geometry, type, name, area\n    FROM osm_buildings\n  ORDER BY ST_YMin(ST_Envelope(geometry)) DESC\n) AS data",
         "type": "postgis",
-        "user": "postgres"
+        "user": "postgres",
+        "id": "buildings",
+        "project": "OSMBright",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
       },
       "class": "",
       "geometry": "polygon",
@@ -314,7 +320,7 @@
         "geometry_field": "geometry",
         "id": "aeroway",
         "key_field": "",
-        "project": "foss4g-2011",
+        "project": "OSMBright",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
         "table": "( SELECT geometry, type\n  FROM osm_aeroways\n) AS data",
         "type": "postgis",
@@ -496,7 +502,7 @@
         "geometry_field": "geometry",
         "id": "place",
         "key_field": "",
-        "project": "foss4g-2011",
+        "project": "OSMBright",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
         "table": "( SELECT geometry, type, name, z_order, population\n  FROM osm_places\n  ORDER BY z_order, population DESC NULLS LAST\n) AS data",
         "type": "postgis",
@@ -536,8 +542,8 @@
         "geometry_field": "geometry",
         "id": "motorway_label",
         "key_field": "",
-        "project": "osm-bright",
-        "srs": null,
+        "project": "OSMBright",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
         "table": "( SELECT geometry, type, name, ref, oneway, CHAR_LENGTH(ref) AS reflen\n    FROM osm_motorways\n    WHERE type IN ('motorway', 'trunk')\n      AND (name IS NOT NULL OR ref IS NOT NULL)\n) AS data",
         "type": "postgis",
         "user": "postgres"
@@ -596,7 +602,7 @@
         "geometry_field": "geometry",
         "id": "waterway_label",
         "key_field": "",
-        "project": "foss4g-2011",
+        "project": "OSMBright",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
         "table": "( SELECT geometry, type, name\n  FROM osm_waterways\n  WHERE type IN ('canal', 'river', 'stream') \n    AND name IS NOT NULL\n) AS data",
         "type": "postgis",
@@ -652,6 +658,65 @@
       "advanced": {},
       "name": "rutas2",
       "status": "off"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -70.65431324886572,
+        -33.411414096492464,
+        -70.55139077467396,
+        -33.37538149373162
+      ],
+      "id": "rutasaevaluar",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/mapas de ruido/rutas a evaluar.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "rutasaevaluar",
+      "status": "off"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -70.65431324886572,
+        -33.411414096492464,
+        -70.5518489343302,
+        -33.37606485598126
+      ],
+      "id": "rutascurvas",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/mapas de ruido/rutas curvas.shp",
+        "id": "rutascurvas",
+        "project": "OSMBright",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "rutascurvas",
+      "status": "off"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -70.65431324886572,
+        -33.411414096492464,
+        -70.5518489343302,
+        -33.37606485598126
+      ],
+      "id": "rutascurvas2",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/mapas de ruido/rutas curvas 2.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "rutascurvas2"
     }
   ],
   "scale": 1,

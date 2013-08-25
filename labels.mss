@@ -333,7 +333,9 @@
    
 #poi[type='university'][zoom>=15],
 #poi[type='hospital'][zoom>=16],
-#poi[type='school'][zoom>=17],
+#poi[type='school'][zoom>=17] {
+  text-name:"[name]";
+}
 #poi[type='library'][zoom>=17] {
   text-name:"[name]";
   text-face-name:@sans;
@@ -470,3 +472,18 @@
 */
 
 /* ****************************************************************** */
+
+
+#rutasaevaluar {
+  line-width:5;
+  line-color:#168;
+}
+
+#rutascurvas2 {
+  line-width:5;
+  line-color:#168;
+  line-opacity:.6;
+  [TRK_ID1='APP.AIR'] {
+    line-color:#000
+  }
+}
