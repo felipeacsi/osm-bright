@@ -206,17 +206,39 @@ Map { background-color: @water; }
 /* CURVAS DE RUIDO 
 /* ================================================================== */
 
-#prueba2 {
+#todos {
   line-color:#594;
-  line-width:0.5;
+  line-width:0;
   polygon-opacity:1;
-  polygon-fill:#ae8;
-  [NAME='CNEL_45'] { polygon-fill:#ddbb33; }
-  [NAME='CNEL_50'] { polygon-fill:#ddff55; }
-  [NAME='CNEL_55'] { polygon-fill:#eebb55; }
-  [NAME='CNEL_60'] { polygon-fill:#eeff55; }
-  [NAME='CNEL_65'] { polygon-fill:#ffffff; }
-  [NAME='CNEL_70'] { polygon-fill:#eeff55; }
+  /* ROJOS
+  http://0to255.com/8f4123
+  */
+  [NAME='DNL_50'] { polygon-fill:#e6ae98; }
+  [NAME='DNL_55'] { polygon-fill:#d88261; }
+  [NAME='DNL_60'] { polygon-fill:#c65a30; }
+  [NAME='DNL_65'] { polygon-fill:#8f4123; }
+  [NAME='DNL_70'] { polygon-fill:#582816; }
+  
+  
+  /* VERDES
+  http://0to255.com/169f510c542b149049
+  
+  [NAME='DNL_50'] { polygon-fill:#82eeb0;}
+  [NAME='DNL_55'] { polygon-fill:#46e58b;}
+  [NAME='DNL_60'] { polygon-fill:#1ccc68;}
+  [NAME='DNL_65'] { polygon-fill:#149049;}
+  [NAME='DNL_70'] { polygon-fill:#0c542b;}
+  */
+  
+  /* AZULES
+  http://0to255.com/1801d3
+  
+  [NAME='DNL_50'] { polygon-fill:#aba1ff;}
+  [NAME='DNL_55'] { polygon-fill:#6f5efe;}
+  [NAME='DNL_60'] { polygon-fill:#331afe;}
+  [NAME='DNL_65'] { polygon-fill:#1801d3;}
+  [NAME='DNL_70'] { polygon-fill:#10018f;}
+  */
   }
 
 
@@ -237,4 +259,18 @@ Map { background-color: @water; }
   [TRK_ID1='DEP.H07'] {line-color:#ccc666; }
   [TRK_ID1='APP.H25'] {line-color:#ccc666; }
   [TRK_ID1='DEP.H25'] {line-color:#ccc666; }  
+}
+
+#rutasaevaluar {
+  line-width:5;
+  line-color:#168;
+}
+
+#rutascurvas2 {
+  line-width:5;
+  line-color:#168;
+  line-opacity:.6;
+  [TRK_ID1='APP.AIR'] {
+    line-color:#000
+  }
 }
