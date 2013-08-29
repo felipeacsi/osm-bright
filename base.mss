@@ -206,6 +206,7 @@ Map { background-color: @water; }
 /* CURVAS DE RUIDO 
 /* ================================================================== */
 
+
 #todos {
   line-color:#594;
   line-width:0;
@@ -239,31 +240,6 @@ Map { background-color: @water; }
   [NAME='DNL_65'] { polygon-fill:#1801d3;}
   [NAME='DNL_70'] { polygon-fill:#10018f;}
   */
-  }
-
-
-#rutas {
-  line-width:10;
-  line-color:#168;
-}
-
-
-#rutas2 {
-  line-width:6;
-  /* line-color:#168; */
-  [TRK_ID1='APP.AIR'] {line-color:#aaa123; }
-  [TRK_ID1='DEP.AIR'] {line-color:#aaa123; }
-  [TRK_ID1='APP.REMO'] {line-color:#bbbccc; }
-  [TRK_ID1='DEP.REMO'] {line-color:#bbbccc; }
-  [TRK_ID1='APP.H07'] {line-color:#ccc666; }
-  [TRK_ID1='DEP.H07'] {line-color:#ccc666; }
-  [TRK_ID1='APP.H25'] {line-color:#ccc666; }
-  [TRK_ID1='DEP.H25'] {line-color:#ccc666; }  
-}
-
-#rutasaevaluar {
-  line-width:5;
-  line-color:#168;
 }
 
 #rutascurvas2 {
@@ -271,6 +247,15 @@ Map { background-color: @water; }
   line-color:#168;
   line-opacity:.6;
   [TRK_ID1='APP.AIR'] {
-    line-color:#000
+    line-color:#000;
+  }
+}
+
+#rutas {
+  line-width:5;
+  line-color:#168;
+  line-opacity:.6;
+  [TRK_ID1='APP.AIR'] {
+    line-color:#000;
   }
 }

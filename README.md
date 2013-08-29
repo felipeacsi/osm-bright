@@ -6,7 +6,7 @@ Actualizando
 
 Se deben borrar los archivos generados por Imposm producto de la conversión del archivo `osm.pbf` en la carpeta donde estén.
 
-Luego, se descarga un archivo `osm.pbf`. En este caso, `chile-latest.osm.pbf` desde [Geofabrik][http://download.geofabrik.de/south-america/chile.html]
+Luego, se descarga un archivo `osm.pbf`. En este caso, `chile-latest.osm.pbf` desde [Geofabrik](http://download.geofabrik.de/south-america/chile.html)
 
 Se ejecuta Imposm en la carpeta donde está el `osm.pbf` para hacer la importación:
 

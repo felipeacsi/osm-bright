@@ -641,91 +641,6 @@
       "extent": [
         -70.65431324886572,
         -33.411414096492464,
-        -70.55157277405954,
-        -33.37559033907855
-      ],
-      "id": "rutas",
-      "class": "",
-      "Datasource": {
-        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/rutas.shp",
-        "id": "rutas",
-        "project": "OSMBright",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "rutas",
-      "status": "off"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        -70.65431324886572,
-        -33.411414096492464,
-        -70.55113610028502,
-        -33.37530132607989
-      ],
-      "id": "rutas2",
-      "class": "",
-      "Datasource": {
-        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/rutas2.shp",
-        "id": "rutas2",
-        "project": "OSMBright",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "rutas2",
-      "status": "off"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        -70.65431324886572,
-        -33.411414096492464,
-        -70.55139077467396,
-        -33.37538149373162
-      ],
-      "id": "rutasaevaluar",
-      "class": "",
-      "Datasource": {
-        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/mapas de ruido/rutas a evaluar.shp"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "rutasaevaluar",
-      "status": "off"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        -70.65431324886572,
-        -33.411414096492464,
-        -70.5518489343302,
-        -33.37606485598126
-      ],
-      "id": "rutascurvas",
-      "class": "",
-      "Datasource": {
-        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/mapas de ruido/rutas curvas.shp",
-        "id": "rutascurvas",
-        "project": "OSMBright",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "rutascurvas",
-      "status": "off"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        -70.65431324886572,
-        -33.411414096492464,
         -70.5518489343302,
         -33.37606485598126
       ],
@@ -739,6 +654,27 @@
       "advanced": {},
       "name": "rutascurvas2",
       "status": "off"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -70.65431324886572,
+        -33.411414096492464,
+        -70.55157277405954,
+        -33.37559033907855
+      ],
+      "id": "rutas",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/mapas de ruido/rutas.shp",
+        "id": "rutas",
+        "project": "OSMBright",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "rutas"
     }
   ],
   "scale": 1,
