@@ -12,4 +12,4 @@ Se ejecuta Imposm en la carpeta donde está el `osm.pbf` para hacer la importaci
 
     imposm -U postgres -d osm -m osm-bright/imposm-mapping.py --read --write --optimize --deploy-production-tables chile-latest.osm.pbf
 
-Si la importación es exitosa, ya se puede ver el mapa actualizado en TileMill.
+La importación debería demorar varios minutos usando un procesador al 100%. Normalmente toma unos 10~15 minutos. Si la importación es exitosa, ya se puede ver el mapa actualizado en TileMill.
