@@ -11,7 +11,9 @@
     14
   ],
   "format": "png",
-  "interactivity": {},
+  "interactivity": {
+    "fields": []
+  },
   "minzoom": 0,
   "maxzoom": 19,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -121,6 +123,24 @@
       "name": "landuse",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -70.60747420326838,
+        -33.39049449856006,
+        -70.56849049386888,
+        -33.37508994614234
+      ],
+      "id": "todos",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/todos.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "todos"
     },
     {
       "Datasource": {
@@ -595,27 +615,6 @@
       "srs-name": "900913"
     },
     {
-      "geometry": "linestring",
-      "extent": [
-        -70.65431324886572,
-        -33.411414096492464,
-        -70.5518489343302,
-        -33.37606485598126
-      ],
-      "id": "rutas",
-      "class": "",
-      "Datasource": {
-        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/rutas.shp",
-        "id": "rutas",
-        "project": "OSMBright",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "rutas"
-    },
-    {
       "geometry": "polygon",
       "extent": [
         -70.60235060475298,
@@ -673,22 +672,22 @@
       "status": "off"
     },
     {
-      "geometry": "polygon",
+      "geometry": "linestring",
       "extent": [
-        -70.60760042721434,
-        -33.39031331294605,
-        -70.56850262314234,
-        -33.375078861204706
+        -70.65431324886572,
+        -33.411414096492464,
+        -70.5518489343302,
+        -33.37606485598126
       ],
-      "id": "todos",
+      "id": "rutasinm",
       "class": "",
       "Datasource": {
-        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/todos.shp"
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/rutas_inm.shp"
       },
-      "srs-name": "900913",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "srs-name": "autodetect",
+      "srs": "",
       "advanced": {},
-      "name": "todos",
+      "name": "rutasinm",
       "status": "off"
     }
   ],
