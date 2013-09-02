@@ -2,15 +2,68 @@
 /* CURVAS DE RUIDO 
 /* ================================================================== */
 
-// #aviones {
-// #remolcadores {
-// #helicopteros {
-#todos {
-  line-color:#594;
+#avionescorregidos {
   line-width:0;
   polygon-opacity:1;
   
-  // multihue blue http://colorbrewer2.org/
+  [NAME='DNL_50'] { polygon-fill:#f8b3b3; }
+  [NAME='DNL_55'] { polygon-fill:#f37474; }
+  [NAME='DNL_60'] { polygon-fill:#ed3636; }
+  [NAME='DNL_65'] { polygon-fill:#cd1212; }
+  [NAME='DNL_70'] { polygon-fill:#8e0d0d; }
+}
+
+#remolcadorescorregid {
+  line-width:0;
+  polygon-opacity:1;
+  
+  [NAME='DNL_50'] { polygon-fill:#f8b3b3; }
+  [NAME='DNL_55'] { polygon-fill:#f37474; }
+  [NAME='DNL_60'] { polygon-fill:#ed3636; }
+  [NAME='DNL_65'] { polygon-fill:#cd1212; }
+  [NAME='DNL_70'] { polygon-fill:#8e0d0d; }
+}
+
+#helicopteros {
+  line-width:0;
+  polygon-opacity:1;
+  
+  [NAME='DNL_50'] { polygon-fill:#f8b3b3; }
+  [NAME='DNL_55'] { polygon-fill:#f37474; }
+  [NAME='DNL_60'] { polygon-fill:#ed3636; }
+  [NAME='DNL_65'] { polygon-fill:#cd1212; }
+  [NAME='DNL_70'] { polygon-fill:#8e0d0d; }
+}
+
+#todoscorregidos {
+  line-width:0;
+  polygon-opacity:1;
+  
+  [NAME='DNL_50'] { polygon-fill:#f8b3b3; }
+  [NAME='DNL_55'] { polygon-fill:#f37474; }
+  [NAME='DNL_60'] { polygon-fill:#ed3636; }
+  [NAME='DNL_65'] { polygon-fill:#cd1212; }
+  [NAME='DNL_70'] { polygon-fill:#8e0d0d; }
+}
+
+/* ======= RUTAS ======== */
+
+#rutasinm {
+  line-width:3;
+  line-opacity:.9;
+  [TRK_ID1='APP.AIR'] { line-color:#70E588; }
+  [TRK_ID1='DEP.AIR'] { line-color:#70E588; }
+  [TRK_ID1='APP.REMO'] { line-color:#169CFF; }
+  [TRK_ID1='DEP.REMO'] { line-color:#169CFF; }
+  [TRK_ID1='APP.H07'] { line-color:#9E83E3; }
+  [TRK_ID1='DEP.H07'] { line-color:#9E83E3; }
+  [TRK_ID1='APP.H25'] { line-color:#9E83E3; }
+  [TRK_ID1='DEP.H25'] { line-color:#9E83E3; }
+}
+
+// ===== Colores sin usar =====
+
+ // multihue blue http://colorbrewer2.org/
   /*
   [NAME='DNL_50'] { polygon-fill:#FFFFCC; }
   [NAME='DNL_55'] { polygon-fill:#A1DAB4; }
@@ -29,14 +82,7 @@
   */
   
   // ROJOS http://0to255.com/bd1111
-  
-  [NAME='DNL_50'] { polygon-fill:#f8b3b3; }
-  [NAME='DNL_55'] { polygon-fill:#f37474; }
-  [NAME='DNL_60'] { polygon-fill:#ed3636; }
-  [NAME='DNL_65'] { polygon-fill:#cd1212; }
-  [NAME='DNL_70'] { polygon-fill:#8e0d0d; }
-  
-  
+
   /* ROJOS
   http://0to255.com/8f4123
   
@@ -65,19 +111,5 @@
   [NAME='DNL_65'] { polygon-fill:#1801d3;}
   [NAME='DNL_70'] { polygon-fill:#10018f;}
   */
-}
 
-/* ======= RUTAS ======== */
-
-#rutasinm {
-  line-width:3;
-  line-opacity:.9;
-  [TRK_ID1='APP.AIR'] { line-color:#70E588; }
-  [TRK_ID1='DEP.AIR'] { line-color:#70E588; }
-  [TRK_ID1='APP.REMO'] { line-color:#169CFF; }
-  [TRK_ID1='DEP.REMO'] { line-color:#169CFF; }
-  [TRK_ID1='APP.H07'] { line-color:#9E83E3; }
-  [TRK_ID1='DEP.H07'] { line-color:#9E83E3; }
-  [TRK_ID1='APP.H25'] { line-color:#9E83E3; }
-  [TRK_ID1='DEP.H25'] { line-color:#9E83E3; }
-}
+// ===== Fin colores sin usar =====

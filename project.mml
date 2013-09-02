@@ -1,13 +1,13 @@
 {
   "bounds": [
-    -70.6153,
-    -33.4017,
-    -70.5602,
-    -33.368
+    -70.6185,
+    -33.4027,
+    -70.564,
+    -33.3674
   ],
   "center": [
-    -70.583,
-    -33.3803,
+    -70.5817,
+    -33.3798,
     14
   ],
   "format": "png",
@@ -15,7 +15,7 @@
     "fields": []
   },
   "minzoom": 0,
-  "maxzoom": 19,
+  "maxzoom": 17,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "palette.mss",
@@ -127,6 +127,119 @@
     {
       "geometry": "polygon",
       "extent": [
+        -70.6043375032428,
+        -33.39154386386792,
+        -70.57370000464113,
+        -33.37649976928001
+      ],
+      "id": "remolcadorescorregid",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/mapas_corregidos/remolcadores_corregidos.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "remolcadorescorregid",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -70.61499685241307,
+        -33.3911199002109,
+        -70.56797273896616,
+        -33.3747129956355
+      ],
+      "id": "todoscorregidos",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/mapas_corregidos/todos_corregidos.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "todoscorregidos"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -70.60245649590975,
+        -33.389180970745684,
+        -70.57343584828624,
+        -33.37624890283692
+      ],
+      "id": "avionescorregidos",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/mapas_corregidos/aviones_corregidos.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "avionescorregidos",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -70.59442193348754,
+        -33.38578146938358,
+        -70.57471001551457,
+        -33.37742734577164
+      ],
+      "id": "remolcadores",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/remolcadores.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "remolcadores",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -70.59064042149173,
+        -33.384671858602466,
+        -70.56901236877486,
+        -33.37633399307378
+      ],
+      "id": "helicopteros",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/helicopteros.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "helicopteros",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -70.60235060475298,
+        -33.389126581646906,
+        -70.57346979368815,
+        -33.37628174311547
+      ],
+      "id": "aviones",
+      "class": "",
+      "Datasource": {
+        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/aviones.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "aviones",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
         -70.60747420326838,
         -33.39049449856006,
         -70.56849049386888,
@@ -140,7 +253,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "todos"
+      "name": "todos",
+      "status": "off"
     },
     {
       "Datasource": {
@@ -613,63 +727,6 @@
       "name": "waterway_label",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -70.60235060475298,
-        -33.389126581646906,
-        -70.57346979368815,
-        -33.37628174311547
-      ],
-      "id": "aviones",
-      "class": "",
-      "Datasource": {
-        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/aviones.shp"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "aviones",
-      "status": "off"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -70.59442193348754,
-        -33.38578146938358,
-        -70.57471001551457,
-        -33.37742734577164
-      ],
-      "id": "remolcadores",
-      "class": "",
-      "Datasource": {
-        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/remolcadores.shp"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "remolcadores",
-      "status": "off"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        -70.59064042149173,
-        -33.384671858602466,
-        -70.56901236877486,
-        -33.37633399307378
-      ],
-      "id": "helicopteros",
-      "class": "",
-      "Datasource": {
-        "file": "/home/felipe/Documents/Ceacústica/Dropbox/Proyectos/Aeródromo de Vitacura/TileMill/curvas_inm/helicopteros.shp"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "helicopteros",
-      "status": "off"
     },
     {
       "geometry": "linestring",
